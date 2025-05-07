@@ -175,78 +175,77 @@ footer {
 @media (max-width: 768px) {
     h1 {
         font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+    .container {
+        padding: 10px; /* Reducido de 20px */
     }
     
+    header {
+        padding: 15px 0; /* Reducido de 30px */
+    }
     .card {
         width: 250px;
         height: 350px;
+        margin-bottom: 15px; /* Reducido de 30px */
     }
     
     .message {
-        padding: 15px;
-        margin-bottom: 20px;
+        padding: 10px;
+        margin-bottom: 15px;
     }
     
     .message p {
         font-size: 1rem;
+        margin-bottom: 10px;
     }
+    footer {
+        padding: 10px 0; /* Reducido de 20px */
+    }
+    
+    footer p {
+        margin: 5px 0; /* Añadido para reducir espacio entre líneas */
+    }
+    
+    /* Asegurar que las flores no ocupen mucho espacio */
+    .flowers-visible {
+        margin: 10px 0; /* Reducido de 20px */
+        gap: 5px; /* Reducido de 10px */
+    }
+    
+    .flower {
+        font-size: 1.5rem !important; /* Reducido de 2rem */
+    }
+
 }
 
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+    .container {
+        padding: 5px; /* Reducido aún más */
     }
     
-    .card-back h2 {
-        font-size: 1.4rem;
+    header {
+        padding: 10px 0; /* Reducido aún más */
     }
     
-    .card-back p {
-        font-size: 0.9rem;
+    .message {
+        margin-bottom: 10px; /* Reducido aún más */
     }
     
     #surpriseBtn {
         padding: 10px 20px;
     }
-}
-
-/* Añade esto al final de tu CSS */
-
-@media (max-width: 480px) {
-    .container {
-        padding: 10px;
-        min-height: 100vh;
-        height: 100vh;
-        overflow: hidden;
-    }
-    
-    header {
-        padding: 10px 0;
-    }
-    
-    main {
-        justify-content: flex-start;
-        padding-top: 10px;
-    }
-    
-    .message {
-        margin-bottom: 15px;
-        padding: 10px;
-        max-width: 95%;
-    }
-    
-    #surpriseBtn {
-        margin-bottom: 10px;
+    /* Ajustes adicionales para pantallas muy pequeñas */
+    body {
+        font-size: 14px;
     }
     
     .flowers-visible {
-        max-height: 30vh;
-        overflow-y: auto;
-        margin: 5px 0;
-    }
-    
-    footer {
-        padding: 10px;
-        font-size: 0.8rem;
+        margin: 5px 0; /* Reducido aún más */
     }
 }
+
