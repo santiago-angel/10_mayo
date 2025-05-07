@@ -209,3 +209,44 @@ footer {
         padding: 10px 20px;
     }
 }
+
+/* Añade esto al final de tu CSS */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        min-height: 100vh;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    header {
+        padding: 10px 0;
+    }
+    
+    main {
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+    
+    .message {
+        margin-bottom: 15px;
+        padding: 10px;
+        max-width: 95%;
+    }
+    
+    #surpriseBtn {
+        margin-bottom: 10px;
+    }
+    
+    .flowers-visible {
+        max-height: 30vh;
+        overflow-y: auto;
+        margin: 5px 0;
+    }
+    
+    footer {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
