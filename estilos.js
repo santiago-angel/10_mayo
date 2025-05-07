@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const flowers = ['🌸', '🌹', '🌺', '🌻', '🌼', '🌷', '💐', '🥀'];
         let flowersHTML = '';
         
-        for (let i = 0; i < 30; i++) {
+        for (let i = 0; i < 20; i++) {
             const randomFlower = flowers[Math.floor(Math.random() * flowers.length)];
             const randomDelay = Math.random() * 3;
             const randomSize = 1 + Math.random() * 2;
