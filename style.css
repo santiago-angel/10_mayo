@@ -22,7 +22,7 @@ body {
 
 header {
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 h1 {
@@ -33,11 +33,13 @@ h1 {
 }
 
 main {
-    flex: 1;
+    flex: 0.6;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;           
     justify-content: center;
+    padding: 5px;
+    max-height: 400px;
 }
 
 .card {
@@ -105,8 +107,8 @@ main {
 .message {
     text-align: center;
     max-width: 600px;
-    margin: 0 auto 40px;
-    padding: 20px;
+    margin: 0 auto 400px;
+    padding: 5px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -138,7 +140,7 @@ main {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #e91e63;
     font-weight: bold;
 }
@@ -175,77 +177,37 @@ footer {
 @media (max-width: 768px) {
     h1 {
         font-size: 2.2rem;
-        margin-bottom: 10px;
-    }
-    .container {
-        padding: 10px; /* Reducido de 20px */
     }
     
-    header {
-        padding: 15px 0; /* Reducido de 30px */
-    }
     .card {
         width: 250px;
         height: 350px;
-        margin-bottom: 15px; /* Reducido de 30px */
     }
     
     .message {
         padding: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     
     .message p {
         font-size: 1rem;
-        margin-bottom: 10px;
     }
-    footer {
-        padding: 10px 0; /* Reducido de 20px */
-    }
-    
-    footer p {
-        margin: 5px 0; /* Añadido para reducir espacio entre líneas */
-    }
-    
-    /* Asegurar que las flores no ocupen mucho espacio */
-    .flowers-visible {
-        margin: 10px 0; /* Reducido de 20px */
-        gap: 5px; /* Reducido de 10px */
-    }
-    
-    .flower {
-        font-size: 1.5rem !important; /* Reducido de 2rem */
-    }
-
 }
 
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8rem;
-        margin-bottom: 5px;
-    }
-    .container {
-        padding: 5px; /* Reducido aún más */
     }
     
-    header {
-        padding: 10px 0; /* Reducido aún más */
+    .card-back h2 {
+        font-size: 1.4rem;
     }
     
-    .message {
-        margin-bottom: 10px; /* Reducido aún más */
+    .card-back p {
+        font-size: 0.9rem;
     }
     
     #surpriseBtn {
         padding: 10px 20px;
     }
-    /* Ajustes adicionales para pantallas muy pequeñas */
-    body {
-        font-size: 14px;
-    }
-    
-    .flowers-visible {
-        margin: 5px 0; /* Reducido aún más */
-    }
 }
-
